@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Teatro - Assis Tá Arte</title>
+    <link rel="stylesheet" href="./source/styles/style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style type="text/tailwindcss">
+      @theme {
+        --color-primary: #1a75bb;
+        --color-back-gray: #191a1a;
+      }
+    </style>
+    <script
+      src="https://kit.fontawesome.com/65738bccfe.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body class="bg-back-gray text-white">
+    <header class="fixed z-20 top-0 w-full bg-black shadow-lg">
+      <nav class="text-white flex items-center m-2">
+        <a href="#">
+          <img
+            src="./source/assets/logo.jpg"
+            class="w-[70px] h-[70px]"
+            alt="Logo do Assis Tá Arte"
+          />
+        </a>
+        <ul class="flex">
+          <li
+            class="ml-4 text-lg p-2 hover:bg-primary rounded-xl transition-all cursor-pointer duration-500"
+          >
+            <a href="#">Home</a>
+          </li>
+          <li
+            class="ml-4 text-lg p-2 hover:bg-primary rounded-xl transition-all cursor-pointer duration-500"
+          >
+            <a href="#">História</a>
+          </li>
+          <li
+            class="ml-4 text-lg p-2 hover:bg-primary rounded-xl transition-all cursor-pointer duration-500"
+          >
+            <a href="#">Cursos</a>
+          </li>
+          <li
+            class="ml-4 text-lg p-2 hover:bg-primary rounded-xl transition-all cursor-pointer duration-500"
+          >
+            <a href="#">Espetáculos</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="mt-20" id="video">
+      <img
+        src="./source/assets/home.jpg"
+        class="relative w-full h-[900px] object-cover"
+        alt="Video de Apresentação Assis Tá Arte"
+      />
+      <div class="absolute inset-0 flex flex-col items-center justify-center">
+        <h1 class="text-[120px] text-font-bolder">ASSIS TÁ ARTE</h1>
+        <a
+          href="#"
+          class="bg-white text-back-gray p-3 shadow-xl rounded-lg text-lg font-semibold m-2 text-center w-[200px] hover:cursor-pointer transition-colors duration-300 hover:bg-slate-100"
+        >
+          Explore o projeto &rarr;</a
+        >
+      </div>
+    </section>
+    <main class="px-6 md:px-12 lg:px-24">
+      <section class="flex mt-20" id="history">
+        <img
+          src="/source/assets/ballet.jpg"
+          class="max-w-[550px] h-[200px] lg:h-full rounded-xl"
+          alt="Imagem da Historia do Projeto"
+        />
+        <div class="max-w-4xl mx-auto my-12 px-4 flex flex-col gap-7">
+          <h1
+            class="text-font-bolder text-3xl md:text-4xl lg:text-5xl font-bold mb-6 text-center md:text-left"
+          >
+            Conheça o Projeto
+          </h1>
+          <p class="text-base md:text-lg leading-relaxed text-justify">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati
+            temporibus itaque rerum maxime? Commodi atque minima suscipit, alias
+            nisi vitae. Praesentium pariatur dicta, quod placeat perspiciatis
+            repudiandae voluptatem quos. Quas dolor facilis molestiae quae nobis
+            natus suscipit veritatis ad sunt, incidunt eum inventore nesciunt
+            minus voluptatibus culpa eveniet quos nemo quod repellendus. Saepe
+            sunt quibusdam aut. Quasi quidem ab sed cumque odit eaque corporis
+            quam ipsa officia dignissimos?
+          </p>
+          <a
+            href="#"
+            class="bg-white text-back-gray p-3 shadow-xl rounded-lg text-lg font-semibold text-center hover:cursor-pointer transition-colors duration-300 hover:bg-slate-100 w-[200px]"
+          >
+            <span class="m-2"><i class="fa-solid fa-book-bookmark"></i></span>
+            Acessar Historia
+          </a>
+        </div>
+      </section>
+
+      <section id="curses">
+        <div class="card">
+          <img
+            src="./source/assets/violao.jpg"
+            alt="Imagem do curso de Violão"
+          />
+          <h1 class="text-font-bolder text-[26px] text-center">Violão</h1>
+          <p class="leading-relaxed text-justify">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi
+            accusantium minus pariatur error nam dolorem fugiat odio eaque
+            perferendis. Dolorem!
+          </p>
+          <a
+            href="#"
+            class="bg-white text-back-gray p-3 shadow-xl rounded-lg text-lg font-semibold text-center hover:cursor-pointer transition-colors duration-300 hover:bg-slate-100"
+          >
+            <i class="fa-solid m-1 fa-guitar"></i> Acessar</a
+          >
+        </div>
+      </section>
+    </main>
+    <footer
+      class="bg-black mt-20 first-letter:*:first-line:marker: px-6 md:px-12 flex lg:px-24 bottom-0 w-full justify-between gap-8"
+    >
+      <div class="flex flex-col mt-3">
+        <h1 class="text-font-bolder text-[50px]">Assis Tá Arte</h1>
+        <p>Projeto cultural de Assis.</p>
+      </div>
+      <div class="mt-3 p-4 text-center">
+        <h1 class="text-font-bolder text-[20px]">Informações</h1>
+        <p>Rua Floriano Peixoto - 757</p>
+        <p>Teatro Municipal</p>
+        <p>
+          <a
+            href="#"
+            class="transition-colors duration-300 hover:text-green-500"
+          >
+            <i class="fa-brands text-[20px] fa-whatsapp"></i>
+            (18) 99769-6969
+          </a>
+        </p>
+      </div>
+      <div class="flex-col p-4 mt-3">
+        <h1 class="text-font-bolder text-right text-[20px]">
+          Conheça nossas redes sociais
+        </h1>
+        <a href="#" class="transition-colors duration-300 hover:text-pink-500"
+          ><i class="fa-brands p-2 text-[26px] fa-instagram"></i
+        ></a>
+        <a href="#" class="transition-colors duration-300 hover:text-blue-500"
+          ><i class="fa-solid p-2 text-[26px] fa-envelope"></i
+        ></a>
+        <a href="#" class="transition-colors duration-300 hover:text-red-600"
+          ><i class="fa-brands p-2 text-[26px] fa-youtube"></i
+        ></a>
+        <a href="#" class="transition-colors duration-300 hover:text-blue-600"
+          ><i class="fa-brands p-2 text-[26px] fa-facebook"></i
+        ></a>
+      </div>
+    </footer>
+    <p class="font-mono text-center bg-black p-4">Copyright Fema &copy; 2025</p>
+  </body>
+</html>

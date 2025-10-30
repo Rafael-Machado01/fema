@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+* {
+   text-decoration: none;
+   list-style-type: none;
+}
+body {
+    font-family: 'Nunito';
+}
+.text-font-bolder {
+   font-family: 'Bebas Neue', sans-serif;
+   font-weight: 700;
+}
