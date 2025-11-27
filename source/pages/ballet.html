@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Ballet - AssisTáArte</title>
+  <script src="https://cdn.tailwindcss.com"></script> 
+   <link rel="shortcut icon" href="../assets/logo.jpg" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<style>
+  * {
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+  }
+  #curse img {
+    height: 300px;
+  }
+</style>
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            colors: {
+              'darkness': '#0a0e1a'
+            }
+          }
+        }
+      }
+    </script>
+    <script src="https://kit.fontawesome.com/65738bccfe.js" crossorigin="anonymous"></script>
+  </head>
+
+  <body class=" dark:bg-darkness dark:text-white">
+
+   <header class="fixed  bg-white dark:bg-slate-950 bg-transparent top-0 left-0 right-0 z-50 shadow-lg backdrop-blur-sm  ">
+      <div class="container mx-auto px-4">
+         <ul class="flex items-center justify-between">
+             <a href="../../index.html" class="bg-pink-500 p-2 w-[100px] dark:bg-pink-800 hover:bg-pink-600 dark:hover:bg-pink-950 transition-all duration-300 text-center m-2 shadow-lg text-white rounded-lg text-lg" >Voltar</a>
+             <div class="flex items-center gap-4">
+              <a href="#explorer" class="text-lg hover:text-pink-700 dark:hover:text-pink-400 transition-colors py-2 px-4 " id="themeBtn">
+                     <i class="fa-solid fa-moon text-[26px]" id="themeIcon" ></i>
+                  </a>    
+              <a id="menuBtn" class="pr-4">
+            <i class="fa-solid fa-bars text-[26px]  hover:text-pink-700 dark:hover:text-pink-400 transition-colors cursor-pointer"></i>
+         </a>
+          
+             </div>
+         
+         </ul>
+      </div>
+
+      <nav class=" hidden absolute top-full bg-slate-50 dark:bg-gray-800 left-0 right-0 backdrop-blur-md shadow-lg m-5 rounded-lg py-6 transition-all duration-300 ease-in-out" id="menu">
+         <ul class="container mx-auto px-4 flex flex-col gap-4">
+            <a href="./index.html" class="text-lg hover:text-pink-700 dark:hover:text-pink-400 transition-colors py-2 px-4 ">Home</a> 
+            <a href="#prof" class="text-lg hover:text-pink-700 dark:hover:text-pink-400 transition-colors py-2 px-4 ">Professores</a> 
+              <a href="#curse" class="text-lg hover:text-pink-700 dark:hover:text-pink-400 transition-colors py-2 px-4 ">Cursos</a> 
+                <a href="#footer" class="text-lg hover:text-pink-700 dark:hover:text-pink-400 transition-colors py-2 px-4 ">Contato</a> 
+                 
+         </ul>
+      </nav>
+   </header>
+
+  <section class="relative h-screen" id="video">
+   <img src="../assets/home-ballet.jpg" class="absolute top-0 left-0 w-full h-full object-cover"   ></>
+   
+   <div
+    class="absolute inset-0 flex flex-col items-center justify-center text-left text-white px-4"
+  >
+    <h1
+      class="text-4xl md:text-6xl font-extrabold mb-10 leading-tight drop-shadow-lg"
+    >
+      Ballet
+    </h1>
+         <a href="#" class="p-2 px-4 rounded-lg shadow-xl backdrop-blur-md text-white">
+  Explorar <span>&rarr;</span>
+</a>
+
+  </div>
+  </section>
+   <main class="px-12 mt-20" id="explorer">
+    <section class="text-center">
+      <span class="inline-flex items-center gap-2 text-lg font-semibold text-pink-700 dark:text-pink-400">
+        <i class="fa-solid fa-person-dress"></i>
+        Inspire-se
+      </span>
+
+      <h1 class="text-3xl md:text-4xl font-bold mt-4 mb-6 text-gray-800 dark:text-gray-100">
+        Por que fazer Ballet?
+      </h1>
+      <div class="flex justify-center">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 justify-center items-center text-center ">
+
+        <div class="flex flex-col bg-gray-50 shadow-2xl w-[250px] sm:w-[280px] md:w-[400px] flex-shrink-0 dark:bg-gray-900 rounded-lg p-4 hover:shadow-pink-500 transition-all duration-500">
+             <i class="fa-solid fa-person-falling text-3xl text-pink-600  my-2"></i>
+          <h1 class="text-pink-500 my-2">Equilibro</h1>
+          <p class="my-2">O ballet trabalha intensamente a consciência corporal, o alinhamento da coluna e o equilíbrio.</p>
+        </div>
+
+        <div class="flex flex-col bg-gray-50 shadow-2xl w-[250px] sm:w-[280px] md:w-[400px] flex-shrink-0 dark:bg-gray-900 rounded-lg p-4 hover:shadow-pink-500 transition-all duration-500">
+             <i class="fa-solid fa-dumbbell text-3xl text-pink-600  my-2"></i>
+          <h1 class="text-pink-500 my-2">Força</h1>
+          <p class="my-2">Apesar de parecer leve, o ballet exige força muscular, principalmente nas pernas, abdômen e costas.</p>
+        </div>
+
+        <div class="flex flex-col bg-gray-50 shadow-2xl w-[250px] sm:w-[280px] md:w-[400px] flex-shrink-0 dark:bg-gray-900 rounded-lg p-4 hover:shadow-pink-500 transition-all duration-500">
+             <i class="fa-solid fa-brain text-3xl text-pink-600  my-2"></i>
+          <h1 class="text-pink-500 my-2">Disciplina</h1>
+          <p class="my-2">O ballet é uma arte que une disciplina e emoção — você aprende a se expressar com o corpo.</p>
+        </div>
+          
+      </div>
+      </div>
+      
+    </section>
+   
+    <section class="text-center mt-16" id="prof">
+      <span class="inline-flex items-center gap-2 text-lg font-semibold text-pink-700 dark:text-pink-400">
+       <i class="fa-solid fa-user-graduate"></i>
+        Ballet
+      </span>
+
+      <h1 class="text-3xl md:text-4xl font-bold mt-4 mb-6 text-gray-800 dark:text-gray-100">
+        Conheça os Professores
+      </h1>
+      <div class="flex items-center justify-center">
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-11">
+            <div class="flex flex-col my-2">
+              <img src="../assets/ballet-prof.jpg" class="w-[200px] hover:scale-110 duration-300 shadow-xl h-[200px] rounded-full object-cover" alt="Imagem do Professor">
+              <h1 class="text-2xl my-2 text-pink-500 font-medium">Fabiana Alves</h1>
+            </div>
+             <div class="flex flex-col my-2">
+              <img src="../assets/ballet-prof-2.jpg" class="w-[200px] hover:scale-110 duration-300 shadow-xl h-[200px] rounded-full object-cover" alt="Imagem do Professor">
+              <h1 class="text-2xl my-2 text-pink-500 font-medium">Jéssica Racanelli</h1>
+            </div>
+              <div class="flex flex-col my-2">
+              <img src="../assets/ballet-prof-3.jpg" class="w-[200px] hover:scale-110 duration-300 shadow-xl h-[200px] rounded-full object-cover" alt="Imagem do Professor">
+              <h1 class="text-2xl my-2 text-pink-500 font-medium">Renata Kill</h1>
+            </div>
+            <div class="flex flex-col my-2">
+              <img src="../assets/ballet-prof-4.jpg" class="w-[200px] hover:scale-110 duration-300 shadow-xl h-[200px] rounded-full object-cover" alt="Imagem do Professor">
+              <h1 class="text-2xl my-2 text-pink-500 font-medium">Ricardo Orso</h1>
+            </div>
+            <div class="flex flex-col my-2">
+              <img src="../assets/ballet-prof-5.jpg" class="w-[200px] hover:scale-110 duration-300 shadow-xl h-[200px] rounded-full object-cover" alt="Imagem do Professor">
+              <h1 class="text-2xl my-2 text-pink-500 font-medium">Danilo Alves</h1>
+            </div>
+          </div>
+        
+          </div>
+      </div>
+    </section>
+    
+<section class="mt-20 px-6 md:px-16">
+  <div class="grid md:grid-cols-2 gap-10 items-center">
+    <div class="text-center md:text-left">
+      <span class="inline-flex items-center gap-2 text-lg font-semibold text-pink-700 dark:text-pink-400">
+        <i class="fa-solid fa-user-group"></i>
+        Contato
+      </span>
+
+      <h1 class="text-3xl md:text-4xl font-bold mt-4 mb-4 text-gray-800 dark:text-gray-100">
+        Faça parte do projeto
+      </h1>
+
+      <p class="text-gray-600 dark:text-gray-300 leading-relaxed mb-6">
+        Se interessou pelo projeto? Entre em contato e venha fazer parte dessa iniciativa!
+        Estamos sempre abertos a novas ideias e sugestões.
+      </p>
+
+      <a
+       href="https://wa.me/551833211891?text=Ol�!%20Gostaria%20de%20mais%20informa��es." target="_blank"
+        class="inline-block bg-pink-500 px-6 py-2 dark:bg-pink-800 hover:bg-pink-600 dark:hover:bg-pink-950 transition-all duration-300 text-center shadow-lg text-white rounded-lg text-lg font-medium"
+      >
+        Entrar em contato
+      </a>
+    </div>
+
+    <div class="w-full h-[300px] md:h-[400px] rounded-xl overflow-hidden">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14726.587948691453!2d-50.42052456776726!3d-22.66694684158141!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x949539997c516663%3A0x397f1194b5b2eb5e!2sTeatro%20Municipal%20de%20Assis!5e0!3m2!1spt-BR!2sbr!4v1762707060801!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </div>
+</section>   
+  <section class="my-16 text-center" id="curse">
+     <span class="inline-flex items-center gap-2 text-lg font-semibold text-pink-700 dark:text-pink-400">
+        <i class="fa-solid fa-hand-sparkles"></i>
+        Encontre o seu Talento
+      </span>
+      <h1 class="text-3xl md:text-4xl font-bold mt-4 mb-6 text-gray-800 dark:text-gray-100">
+        Conheça outros cursos
+      </h1>
+
+      <div class="relative max-w-7xl mx-auto px-6">
+
+        <a id="backBtn" class="absolute left-0 top-1/2 hover:cursor-pointer z-40 -translate-y-1/2 bg-pink-500 text-white p-4 rounded-full shadow-lg hover:bg-pink-600 transition-colors duration-300" >
+          <i class="fa-solid text-[20px] fa-chevron-left"></i>
+        </a>
+
+           <a id="nextBtn" class="absolute right-0 top-1/2 hover:cursor-pointer z-40 -translate-y-1/2 bg-pink-500 text-white p-4 rounded-full shadow-lg hover:bg-pink-600 transition-colors duration-300" >
+          <i class="fa-solid text-[20px] fa-chevron-right"></i>
+        </a>
+
+        <div class="overflow-hidden max-w-full sm:max-w-4xl md:max-w-6xl mx-auto">
+          <div class="flex gap-6 m-4 transition-transform duration-500" id="carrousel">
+
+        
+
+     
+
+<div class="bg-gray-50 shadow-lg w-[250px] sm:w-[280px] md:w-[400px] flex-shrink-0 dark:bg-gray-900 rounded-lg flex flex-col">
+  <img src="../assets/teatro-card.jpg" class="rounded-t-lg" alt="Apresentação de Teatro">
+  <h1 class="text-aa-500 font-medium text-2xl my-4">
+    <i class="fa-solid text-white text-[30px] p-4 rounded-xl bg-purple-600 fa-masks-theater"></i> Teatro
+  </h1>
+  <p class="my-6 p-2 leading-relaxed text-gray-600 dark:text-gray-300">
+    O teatro desperta criatividade e comunicação, ajudando na expressão das emoções e no trabalho em equipe. Cada personagem representa uma nova forma de ver o mundo.
+  </p>
+  <a href="./teatro.html" class="p-4 m-4 bg-purple-500 text-white rounded-lg hover:bg-purple-600 transition-all duration-400 hover:cursor-pointer dark:bg-purple-600 dark:hover:bg-purple-700">Acessar</a>
+</div>
+
+<div class="bg-gray-50 shadow-lg w-[250px] sm:w-[280px] md:w-[400px] flex-shrink-0 dark:bg-gray-900 rounded-lg flex flex-col">
+  <img src="../assets/circo-card.jpg" class="rounded-t-lg" alt="Apresentação de Circo">
+  <h1 class="text-aa-500 font-medium text-2xl my-4">
+    <i class="fa-solid text-white text-[30px] p-4 rounded-xl bg-red-600 fa-tent"></i> Circo
+  </h1>
+  <p class="my-6 p-2 leading-relaxed text-gray-600 dark:text-gray-300">
+    O circo encanta com acrobacias, equilíbrio e alegria. Estimula a confiança, coordenação e superação de limites, sempre com muita diversão e criatividade.
+  </p>
+  <a href="./circo.html" class="p-4 m-4 bg-red-500 text-white rounded-lg hover:bg-red-600 transition-all duration-400 hover:cursor-pointer dark:bg-red-600 dark:hover:bg-red-700">Acessar</a>
+</div>
+
+<div class="bg-gray-50 shadow-lg w-[250px] sm:w-[280px] md:w-[400px] flex-shrink-0 dark:bg-gray-900 rounded-lg flex flex-col">
+  <img src="../assets/desenho-card.jpg" class="rounded-t-lg" alt="Apresentação de Desenho">
+  <h1 class="text-aa-500 font-medium text-2xl my-4">
+    <i class="fa-solid text-white text-[30px] p-4 rounded-xl bg-yellow-500 fa-pencil"></i> Desenho
+  </h1>
+  <p class="my-6 p-2 leading-relaxed text-gray-600 dark:text-gray-300">
+    O desenho estimula a imaginação, a paciência e a percepção visual. Uma forma de transformar ideias e sentimentos em arte através das cores e traços.
+  </p>
+  <a href="./desenho.html" class="p-4 m-4 bg-yellow-500 text-white rounded-lg hover:bg-yellow-600 transition-all duration-400 hover:cursor-pointer dark:bg-yellow-600 dark:hover:bg-yellow-700">Acessar</a>
+</div>
+
+<div class="bg-gray-50 shadow-lg w-[250px] sm:w-[280px] md:w-[400px] flex-shrink-0 dark:bg-gray-900 rounded-lg flex flex-col">
+  <img src="../assets/musica-card.jpg" class="rounded-t-lg" alt="Apresentação de Música">
+  <h1 class="text-aa-500 font-medium text-2xl my-4">
+    <i class="fa-solid text-white text-[30px] p-4 rounded-xl bg-orange-500 fa-guitar"></i> Violão
+  </h1>
+  <p class="my-6 p-2 leading-relaxed text-gray-600 dark:text-gray-300">
+    A música desperta emoções, melhora a concentração e incentiva a sensibilidade. Aprender um instrumento é um caminho de autoconhecimento e expressão pessoal.
+  </p>
+  <a href="./violao.html" class="p-4 m-4 bg-orange-500 text-white rounded-lg hover:bg-orange-600 transition-all duration-400 hover:cursor-pointer dark:bg-orange-600 dark:hover:bg-orange-700">Acessar</a>
+</div>
+
+<div class="bg-gray-50 shadow-lg w-[250px] sm:w-[280px] md:w-[400px] flex-shrink-0 dark:bg-gray-900 rounded-lg flex flex-col">
+  <img src="../assets/capoeira-card.jpg" class="rounded-t-lg" alt="Apresentação de Capoeira">
+  <h1 class="text-aa-500 font-medium text-2xl my-4">
+    <i class="fa-solid text-white text-[30px] p-4 rounded-xl bg-green-500 fa-person-running"></i> Capoeira
+  </h1>
+  <p class="my-6 p-2 leading-relaxed text-gray-600 dark:text-gray-300">
+    A capoeira combina luta, dança e música em uma expressão cultural única. Promove disciplina, agilidade e respeito às tradições afro-brasileiras.
+  </p>
+  <a href="./capoeira.html" class="p-4 m-4 bg-green-500 text-white rounded-lg hover:bg-green-600 transition-all duration-400 hover:cursor-pointer dark:bg-green-600 dark:hover:bg-green-700">Acessar</a>
+</div>
+          </div>
+        </div>
+      </div>      
+  </section>
+    </main>
+    <footer id="footer" class="bg-pink-600 dark:bg-gray-900 p-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 text-white mt-16">
+
+  <div class="flex items-start gap-6">
+    <div class="flex flex-col items-center md:items-start">
+      <img src="../assets/logo.png" alt="Logo AssisTáArte" class="w-[150px] rounded-lg mb-3 shadow-md" />
+
+         <div class="flex gap-4">
+        <a href="https://www.instagram.com/secretariadeculturadeassis/" target="_blank"> <i class="fa-brands fa-instagram text-2xl hover:text-pink-400 transition-colors duration-200" aria-label="Instagram"></i></a> 
+        <a href="https://www.facebook.com/cinemamunicipalassis/?locale=pt_BR" target="_blank">  <i class="fa-brands fa-facebook text-2xl hover:text-blue-300 transition-colors duration-200" aria-label="Facebook"></i>    </a>
+         <a href="https://wa.me/551833211891?text=Ol�!%20Gostaria%20de%20mais%20informa��es." target="_blank"><i class="fa-brands fa-whatsapp text-2xl hover:text-green-400 transition-colors duration-200" aria-label="WhatsApp"></i></a> 
+      </div>
+    </div>
+
+    <div class="flex flex-col justify-center text-center md:text-left">
+      <h1 class="text-xl font-semibold mb-3">AssisTáArte</h1>
+      <p class="leading-relaxed text-sm max-w-md">
+        Projeto da Secretaria de Cultura de Assis.
+      </p>
+    </div>
+  </div>
+
+  <div class="text-center">
+    <h1 class="text-lg font-semibold mb-4 border-b border-white/30 inline-block pb-1">Explorar</h1>
+    <ul class="space-y-2 text-sm">
+    <li class="hover:translate-x-1 transition-all"> <a href="index.html" class="hover:text-slate-100 hover:translate-x-1 transition-all cursor-pointer">Home</a></li> 
+     <li class="hover:translate-x-1 transition-all"> <a href="#curse" class="hover:text-slate-100  cursor-pointer">Cursos</a></li>
+      <li class="hover:translate-x-1 transition-all"><a href="#footer" class="hover:text-slate-100 hover:translate-x-1 transition-all cursor-pointer">Contato</a></li>
+    </ul>
+  </div>
+
+  <div class="text-center md:text-left">
+    <h1 class="text-lg font-semibold mb-4 border-b border-white/30 inline-block pb-1">Contato</h1>
+    <nav class="space-y-2 text-sm">
+      <p class="hover:text-slate-100 cursor-pointer">
+        <i class="fa-solid fa-location-dot mr-2"></i> Rua Floriano Peixoto, 757 - Centro, Assis
+      </p>
+      <p class="hover:text-slate-100 cursor-pointer">
+        <i class="fa-solid fa-phone mr-2"></i> (18) 3321-1891
+      </p>
+      <p class="hover:text-slate-100 cursor-pointer">
+        <i class="fa-solid fa-envelope mr-2"></i> cultura@assis.sp.gov.br
+      </p>
+    </nav>
+  </div>
+</footer>
+      <script src="../scripts/carrousel.js"></script>
+     <script src="../scripts/header.js"></script>
+  </body>
+</html>
